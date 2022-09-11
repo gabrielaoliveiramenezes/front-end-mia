@@ -13,6 +13,7 @@ const ThirdStage = () => {
 
   useEffect(()=>{
     if(valueButton){
+      localStorage.setItem("type", valueButton);
       navigate("/fourth-stage", {state: {valueButton: valueButton}});
     }
   }, [valueButton])

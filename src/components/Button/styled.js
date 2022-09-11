@@ -20,8 +20,8 @@ export const TextArea = styled.div`
 `;
 
 export const Icon = styled.img`
-  width: 16px;
-  height: 16px;
+  width: ${props => props.widthIcon ? props.widthIcon : '16px' };
+  width: ${props => props.heightIcon ? props.heightIcon : '16px' };
 `;
 
 export const ButtonText = styled.span`

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const Container = styled.section`
   background: #fff;
@@ -13,6 +14,9 @@ export const GreetingsArea = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding: 20px;
+  max-width: 448px;
+  width: 100%;
 `;
 
 export const Emoji = styled.img`
@@ -31,4 +35,15 @@ export const TextArea = styled.p`
   span{
     color: #D81656;
   }
+`;
+
+export const CustomLink = styled(Link)`
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
 `;

@@ -11,7 +11,7 @@ const FifthyStage = () => {
 
   const handleClick = () => {
     localStorage.setItem("number", inputValue);
-    // navigate('/second-stage');
+    navigate('/last-stage');
   }
 
   return (
@@ -19,7 +19,7 @@ const FifthyStage = () => {
       <Styled.InfoArea>
         <Styled.WelcomeIcon src="src/assets/images/phone.png" />
 
-        <Input type="text" width="448px" height="40px" label="Essa experiência acontece toda pelo WhatsApp. Por isso, me diz qual o número do seu celular?" placeholder="Escreva seu whatsapp" onChange={(event) => setInputValue(event.target.value)} value={inputValue} description="Não se preocupe! Seu número será utilizado exclusivamente para que eu demonstre a experiência MIA"/>
+        <Input type="text" width="448px" height="40px" label="Essa experiência acontece toda pelo WhatsApp. Por isso, me diz qual o número do seu celular?" placeholder="Escreva seu whatsapp" onChange={(event) => setInputValue(event.target.value)} value={inputValue} description="Não se preocupe! Seu número será utilizado exclusivamente para que eu demonstre a experiência MIA" hasSpan="true"/>
 
         <Styled.ButtonArea>
           <Button text="Avançar" width="448px" height="48px" onClick={handleClick}/>

@@ -9,12 +9,15 @@ function Input({
   label,
   value,
   onChange,
-  description
+  description,
+  hasSpan
 }) {
   return (
     <Styled.InputArea height={height} width={width}>
       <label htmlFor={name}>{label}</label>
-      <span>{description}</span>
+      {hasSpan && (
+        <span>{description}</span>
+      )}
       <input
         type={type}
         placeholder={placeholder}

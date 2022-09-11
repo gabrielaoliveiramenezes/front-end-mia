@@ -10,7 +10,6 @@ const FourthStage = () => {
   const { valueButton } = state;
 
   useEffect(()=>{
-    console.log(valueButton);
     switchText();
   }, []);
 
