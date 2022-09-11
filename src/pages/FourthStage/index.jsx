@@ -38,7 +38,7 @@ const FourthStage = () => {
   return redirectNow ? (
       <Navigate to="/fifthy-stage" />
     ) : (
-      <InformationScreen iconUrl="src/assets/images/rocket.png" text={`Legal, ${name}!`} paragraphy={paragraphy}/>
+      <InformationScreen iconUrl="assets/images/rocket.png" text={`Legal, ${name}!`} paragraphy={paragraphy}/>
   )
 }
 

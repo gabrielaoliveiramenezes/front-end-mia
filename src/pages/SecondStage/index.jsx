@@ -15,7 +15,7 @@ const SecondStage = () => {
   return redirectNow ? (
       <Navigate to="/third-stage" />
     ) : (
-      <InformationScreen iconUrl="src/assets/images/smile-emoji.png" text={`Prazer, ${name}!`} paragraphy={paragraphy}/>
+      <InformationScreen iconUrl="assets/images/smile-emoji.png" text={`Prazer, ${name}!`} paragraphy={paragraphy}/>
   )
 }
 

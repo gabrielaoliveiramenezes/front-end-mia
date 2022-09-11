@@ -28,7 +28,7 @@ const LastStage = () => {
   }
 
   return(
-    <InformationScreen iconUrl="src/assets/images/star-eyes.png" text={`Prontinho, ${name}!`} paragraphy="A experiência MIA que vai fazer sua hamburgueria decolar começará nos próximos minutos em seu WhatsApp." hasButton="true" hasLink="true"/>
+    <InformationScreen iconUrl="assets/images/star-eyes.png" text={`Prontinho, ${name}!`} paragraphy="A experiência MIA que vai fazer sua hamburgueria decolar começará nos próximos minutos em seu WhatsApp." hasButton="true" hasLink="true"/>
   )
 }
 

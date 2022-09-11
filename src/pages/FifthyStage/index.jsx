@@ -28,7 +28,7 @@ const FifthyStage = () => {
   return (
     <Styled.Container>
       <Styled.InfoArea>
-        <Styled.WelcomeIcon src="src/assets/images/phone.png" />
+        <Styled.WelcomeIcon src="assets/images/phone.png" />
 
         <Input type="text" width="448px" height="40px" label="Essa experiência acontece toda pelo WhatsApp. Por isso, me diz qual o número do seu celular?" placeholder="Escreva seu whatsapp" onChange={(event) => handleText(event)} value={inputValue} description="Não se preocupe! Seu número será utilizado exclusivamente para que eu demonstre a experiência MIA" hasSpan="true"/>
 

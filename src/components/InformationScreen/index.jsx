@@ -16,7 +16,7 @@ const InformationScreen = ({iconUrl, text, paragraphy, hasButton, hasLink}) => {
         </Styled.TextArea>
 
         {hasButton && (
-          <Button text={textButton} width="448px" height="82px" onClick={() => {}} hasIcon="true" iconUrl="src/assets/images/iPhone.png" align="left" widthIcon="58px" heightIcon="58px"/>
+          <Button text={textButton} width="448px" height="82px" onClick={() => {}} hasIcon="true" iconUrl="assets/images/iPhone.png" align="left" widthIcon="58px" heightIcon="58px"/>
         )}
 
         {hasLink && (

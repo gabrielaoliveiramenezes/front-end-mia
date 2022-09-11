@@ -21,13 +21,13 @@ const ThirdStage = () => {
   return(
     <Styled.Container>
       <Styled.InfoArea>
-        <Styled.Icon src="src/assets/images/bag-icon.png" />
+        <Styled.Icon src="assets/images/bag-icon.png" />
         <Styled.TextArea>Vamos supor que você queira otimizar o <br /> marketing de uma empresa. Qual seria?</Styled.TextArea>
 
         <Styled.ButtonWrapper>
-          <Button text="Hamburgueria" width="448px" height="48px" onClick={() => handleClick("Hamburgueria")} hasIcon="true" iconUrl="src/assets/images/burguer.png"/>
-          <Button text="Drogaria" width="448px" height="48px" onClick={() => handleClick("Drogaria")} hasIcon="true" iconUrl="src/assets/images/medicine.png"/>
-          <Button text="Loja de roupas" width="448px" height="48px" onClick={() => handleClick("Loja de roupas")} hasIcon="true" iconUrl="src/assets/images/shirt.png"/>
+          <Button text="Hamburgueria" width="448px" height="48px" onClick={() => handleClick("Hamburgueria")} hasIcon="true" iconUrl="assets/images/burguer.png"/>
+          <Button text="Drogaria" width="448px" height="48px" onClick={() => handleClick("Drogaria")} hasIcon="true" iconUrl="assets/images/medicine.png"/>
+          <Button text="Loja de roupas" width="448px" height="48px" onClick={() => handleClick("Loja de roupas")} hasIcon="true" iconUrl="assets/images/shirt.png"/>
         </Styled.ButtonWrapper>
         
       </Styled.InfoArea>

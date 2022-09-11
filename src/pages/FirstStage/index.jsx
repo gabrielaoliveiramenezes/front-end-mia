@@ -28,7 +28,7 @@ const FirstStage = () => {
   return (
     <Styled.Container>
       <Styled.InfoArea>
-        <Styled.WelcomeIcon src="src/assets/images/welcome-icon.png" />
+        <Styled.WelcomeIcon src="assets/images/welcome-icon.png" />
 
         <Input type="text" width="448px" height="40px" label="Como você quer ser chamado?" placeholder="Escreva seu nome" onChange={(event) => {handleText(event)}} value={inputValue}/>
 
