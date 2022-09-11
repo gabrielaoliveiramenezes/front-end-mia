@@ -1,8 +1,15 @@
 import React from 'react'
 import Button from '../../components/Button'
 import * as Styled from './styled'
+import { useNavigate } from 'react-router-dom'
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/first-stage');
+  }
+
   return (
     <Styled.Container>
       <Styled.InfoArea>
@@ -13,7 +20,7 @@ const HomePage = () => {
         </Styled.TextArea>
 
         <Styled.ButtonArea>
-          <Button text="Começar" width="212px" height="40px"/>
+          <Button text="Começar" width="212px" height="40px" onClick={handleClick} type="button" />
         </Styled.ButtonArea>
       </Styled.InfoArea>
     </Styled.Container>

@@ -7,7 +7,8 @@ function Input({
   placeholder,
   name,
   label,
-  value
+  value,
+  onChange
 }) {
   return (
     <Styled.InputArea height={height} width={width}>
@@ -17,6 +18,7 @@ function Input({
         placeholder={placeholder}
         name={name}
         value={value}
+        onChange={onChange}
       />
     </Styled.InputArea>
   );
