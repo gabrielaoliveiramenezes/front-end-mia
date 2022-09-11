@@ -13,6 +13,17 @@ export const InputArea = styled.div`
     font-size: 24px;
     line-height: 29px;
     color: #D81656;
+    width: ${props => props.width};
+  }
+
+  span{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    width: ${props => props.width};
   }
 
   input{

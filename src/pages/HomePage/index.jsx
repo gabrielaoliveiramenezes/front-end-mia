@@ -1,7 +1,7 @@
-import React from 'react'
-import Button from '../../components/Button'
-import * as Styled from './styled'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import Button from '../../components/Button';
+import * as Styled from './styled';
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -27,4 +27,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default HomePage;

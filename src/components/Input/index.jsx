@@ -8,11 +8,13 @@ function Input({
   name,
   label,
   value,
-  onChange
+  onChange,
+  description
 }) {
   return (
     <Styled.InputArea height={height} width={width}>
       <label htmlFor={name}>{label}</label>
+      <span>{description}</span>
       <input
         type={type}
         placeholder={placeholder}

@@ -1,25 +1,21 @@
-import * as Styled from './styled';
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
+import InformationScreen from '../../components/InformationScreen';
 
 const SecondStage = () => {
   const name = localStorage.getItem("name");
   const [redirectNow, setRedirectNow] = useState(false);
 
-  setTimeout(() => setRedirectNow(true), 5000);
+  setTimeout(() => setRedirectNow(true), 4000);
+
+  const paragraphy = (
+    <p>Vou te mostrar o meu jeito de fazer <br/> marketing direcionado por dados.</p>
+  );
 
   return redirectNow ? (
       <Navigate to="/third-stage" />
     ) : (
-      <Styled.Container>
-      <Styled.GreetingsArea>
-        <Styled.Emoji src="src/assets/images/smile-emoji.png"/>
-        <Styled.TextArea>
-          <span>Prazer, {name}! <br /></span>
-          Vou te mostrar o meu jeito de fazer <br /> marketing direcionado por dados.
-        </Styled.TextArea>
-      </Styled.GreetingsArea>
-    </Styled.Container>
+      <InformationScreen iconUrl="src/assets/images/smile-emoji.png" text={`Prazer, ${name}!`} paragraphy={paragraphy}/>
   )
 }
 

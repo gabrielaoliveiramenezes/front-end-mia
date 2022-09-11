@@ -16,7 +16,7 @@ export const TextArea = styled.div`
   justify-content: ${props => props.hasIcon ? "flex-start" : "center"};
   align-items: center;
   gap: 8px;
-  padding-left: 16px;
+  padding-left: ${props => props.hasIcon ? "16px" : "0"};
 `;
 
 export const Icon = styled.img`
