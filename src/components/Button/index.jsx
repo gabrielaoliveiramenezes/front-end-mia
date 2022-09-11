@@ -6,6 +6,9 @@ function Button({
   type,
   text,
   onClick,
+  align,
+  hasIcon,
+  iconUrl
 }) {
   return (
     <Styled.Button
@@ -13,8 +16,13 @@ function Button({
       width={width}
       height={height}
       onClick={onClick}
+      align={align}
+      hasIcon={hasIcon}
     >
-      <Styled.ButtonText>{text}</Styled.ButtonText>
+      <Styled.TextArea hasIcon={hasIcon}>
+        {hasIcon && (<Styled.Icon src={iconUrl} />)}
+        <Styled.ButtonText>{text}</Styled.ButtonText>
+      </Styled.TextArea>
     </Styled.Button>
   );
 }

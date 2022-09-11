@@ -9,7 +9,7 @@ const SecondStage = () => {
   setTimeout(() => setRedirectNow(true), 5000);
 
   return redirectNow ? (
-      <Navigate to="/" />
+      <Navigate to="/third-stage" />
     ) : (
       <Styled.Container>
       <Styled.GreetingsArea>

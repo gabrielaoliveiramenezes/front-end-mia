@@ -8,6 +8,20 @@ export const Button = styled.button`
   border-radius: 24px;
   border: none;
   cursor: pointer;
+  text-align: ${props => props.align};
+`;
+
+export const TextArea = styled.div`
+  display: flex;
+  justify-content: ${props => props.hasIcon ? "flex-start" : "center"};
+  align-items: center;
+  gap: 8px;
+  padding-left: 16px;
+`;
+
+export const Icon = styled.img`
+  width: 16px;
+  height: 16px;
 `;
 
 export const ButtonText = styled.span`
